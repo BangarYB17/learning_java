@@ -17,6 +17,7 @@ class fulltimeemp extends employee{
     double calculatesal(){
         return basesal + bonus;
     }
+    @Override
     void showdetails(){
         System.out.println("Name:"+ name + " Salary :" + calculatesal());
     }
@@ -29,6 +30,7 @@ class parttimeemp extends employee{
     double calculatesal(){
         return basesal + houserent;
     }
+    @Override
     void showdetails(){
         System.out.println("Name:"+ name + " Salary" + calculatesal());
     }
@@ -42,7 +44,7 @@ class tempemp extends employee{
     double calculatesal(){
         return presentdays * perdaysal;
     }
-
+    @Override
     void showdetails(){
         System.out.println("Name:"+ name + " Salary:" + calculatesal());
     }
