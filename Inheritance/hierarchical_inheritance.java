@@ -21,9 +21,16 @@ class SavingAccount extends Account{
 
 class CurrentAccount extends Account{
     double overdraftLimit;
-
-    void DisplayLimit(){
-        System.out.println("Overdraft Limit:"+ overdraftLimit);
+    
+    void DisplayLimit(double amt){
+        // System.out.println(Balance);
+         if(Balance + overdraftLimit >= amt){
+            Balance -= amt;
+            System.out.println("Withdrawn "+amt +". Remaining Balance: "+ Balance);
+        }else{
+            System.out.println("Overdraft Limit exceede!");
+        }
+        
     }
 }
 
@@ -32,14 +39,14 @@ class CurrentAccount extends Account{
      SavingAccount ac = new SavingAccount();
      CurrentAccount limit = new CurrentAccount();
 
-     ac.AcHolderName="Lekhit Gulambi";
-     ac.Balance = 5000.00;
+     limit.AcHolderName="Lekhit Gulambi";
+     limit.Balance = 5000.00;
      ac.IntRate = 5;
 
      limit.overdraftLimit = 5000.00;
 
      ac.deposit(4000.00);
      ac.AppltIntRate();
-     limit.DisplayLimit();
+     limit.DisplayLimit(5000.00);
     }
 }
