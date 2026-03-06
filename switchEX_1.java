@@ -1,4 +1,4 @@
-public class switchEX{
+public class switchEX_1{
     public static void main(String[] args){
         /*example 1 */
         int num = 2;

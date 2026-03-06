@@ -13,7 +13,7 @@ class child extends parent{
 
 public class superex3 {
     public static void main(String[] args) {
-        child  msg= new child();
+        child  info= new child();
     
     }
 }

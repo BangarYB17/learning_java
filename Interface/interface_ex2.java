@@ -134,6 +134,7 @@ public class interface_ex2{
         System.out.print("Enter Amount: ");
  
         double amount = scanner.nextDouble();
+        scanner.nextLine();
  
         Payment payment;
  
