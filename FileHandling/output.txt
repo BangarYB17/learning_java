@@ -1,2 +1,1 @@
-Hello Yogeshwar, this is FileOutputStream.
-This line is appended.
+Hello
