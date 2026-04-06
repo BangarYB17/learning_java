@@ -19,7 +19,7 @@ public class Hashtable_ex {
         table.remove(4);
 
         //containskey()
-        System.out.println("contains key 1" + table.containsKey(2));
+        System.out.println("contains key 2" + table.containsKey(2));
 
         //containsvalue()
         System.out.println("Contains value java: "+table.containsValue("java"));
